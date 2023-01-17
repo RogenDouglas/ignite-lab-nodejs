@@ -7,4 +7,7 @@ export abstract class NotificationRepository {
   abstract countNotificationsByRecipientId(
     recipientId: string,
   ): Promise<number>;
+  abstract findNotificationsByRecipientId(
+    recipientId: string,
+  ): Promise<Notification[]>;
 }
